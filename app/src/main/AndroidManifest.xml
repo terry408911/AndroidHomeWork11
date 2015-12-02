@@ -18,6 +18,7 @@
         <activity android:name=".Show" >
 
         </activity>
+
         <service android:name=".MyService">
 
         </service>

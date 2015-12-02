@@ -1,12 +1,9 @@
 package com.terry.nmy11;
 
-import android.app.Service;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.os.IBinder;
-import android.renderscript.Script;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,7 +25,10 @@ public class MainActivity extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent startIntent = new Intent(MainActivity.this,MyService.class);
+                startIntent.putExtra("title",title.getText().toString());
+                startIntent.putExtra("content",content.getText().toString());
                 startService(startIntent);
 
             }
