@@ -5,20 +5,20 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
+        android:text="标题为:"
+        android:id="@+id/textView2"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="29dp"
-        android:layout_alignParentEnd="true"
-        android:text="title is: " />
+        android:layout_marginTop="22dp"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="content is:"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
+        android:text="内容为:"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="42dp"
         android:layout_alignParentEnd="true" />
 </RelativeLayout>

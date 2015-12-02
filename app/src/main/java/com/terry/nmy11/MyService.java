@@ -11,8 +11,8 @@ import android.util.Log;
  */
 public class MyService extends Service {
     MyBroadcastReceiver myBroadcastReceiver;
-    String title = " ";
-    String content = " ";
+    String title = "123";
+    String content = "456";
 
     @Override
     public IBinder onBind(Intent intent){
@@ -35,8 +35,12 @@ public class MyService extends Service {
         myBroadcastReceiver = new MyBroadcastReceiver();
         registerReceiver(myBroadcastReceiver, intentFilter);
 
+        Log.d("test", "fuck Android");
         this.title = intent.getStringExtra("title");
+        Log.d("title",title);
         this.content = intent.getStringExtra("content");
+
+        Log.d("content",content);
 
         send();
 
